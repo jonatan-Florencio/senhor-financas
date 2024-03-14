@@ -1,9 +1,10 @@
 package controller;
-import java.util.List;
+import jakarta.ws.rs.Path;
 
 
 @Path("/Pessoa")
 public class PessoaRest {
+ 
 	
 }
 
