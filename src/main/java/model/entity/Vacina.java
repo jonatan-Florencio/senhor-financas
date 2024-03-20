@@ -3,35 +3,73 @@ package model.entity;
 import java.time.LocalDate;
 
 public class Vacina {
-
+	private int id;
+	private String nome; 
 	private String paisOrigem;
-	private String pesquisa;
-	private LocalDate incioPesquisa;
-	private String pesquisadorResposavel;
+	private Pessoa pesquisadorResponsavel;
+	private LocalDate dataInicioPesquisa;
+	private int estagio;
 	
+	public Vacina() {
+		
+	}
+
+	public Vacina(int id, String nome, String paisOrigem, Pessoa pesquisadorResponsavel, LocalDate dataInicioPesquisa,
+			int estagio) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.paisOrigem = paisOrigem;
+		this.pesquisadorResponsavel = pesquisadorResponsavel;
+		this.dataInicioPesquisa = dataInicioPesquisa;
+		this.estagio = estagio;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
 	public String getPaisOrigem() {
 		return paisOrigem;
 	}
+
 	public void setPaisOrigem(String paisOrigem) {
 		this.paisOrigem = paisOrigem;
 	}
-	public String getPesquisa() {
-		return pesquisa;
+
+	public Pessoa getPesquisadorResponsavel() {
+		return pesquisadorResponsavel;
 	}
-	public void setPesquisa(String pesquisa) {
-		this.pesquisa = pesquisa;
+
+	public void setPesquisadorResponsavel(Pessoa pesquisadorResponsavel) {
+		this.pesquisadorResponsavel = pesquisadorResponsavel;
 	}
-	public LocalDate getIncioPesquisa() {
-		return incioPesquisa;
+
+	public LocalDate getDataInicioPesquisa() {
+		return dataInicioPesquisa;
 	}
-	public void setIncioPesquisa(LocalDate incioPesquisa) {
-		this.incioPesquisa = incioPesquisa;
+
+	public void setDataInicioPesquisa(LocalDate dataInicioPesquisa) {
+		this.dataInicioPesquisa = dataInicioPesquisa;
 	}
-	public String getPesquisadorResposavel() {
-		return pesquisadorResposavel;
+
+	public int getEstagio() {
+		return estagio;
 	}
-	public void setPesquisadorResposavel(String pesquisadorResposavel) {
-		this.pesquisadorResposavel = pesquisadorResposavel;
+
+	public void setEstagio(int estagio) {
+		this.estagio = estagio;
 	}
-	
 }
