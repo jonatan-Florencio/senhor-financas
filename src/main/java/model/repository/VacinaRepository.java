@@ -24,7 +24,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 		try {
 			stmt.setInt(1, novaVacina.getPesquisadorResponsavel().getId());
 			stmt.setString(2, novaVacina.getNome());
-			stmt.setString(3, novaVacina.getPaisOrigem());
+			stmt.setInt(3, novaVacina.getId());
 			stmt.setInt(4, novaVacina.getEstagio());
 			stmt.setDate(5, Date.valueOf(novaVacina.getDataInicioPesquisa()));
 			
@@ -72,7 +72,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 		try {
 			stmt.setInt(1, vacinaEditada.getPesquisadorResponsavel().getId());
 			stmt.setString(2, vacinaEditada.getNome());
-			stmt.setString(3, vacinaEditada.getPaisOrigem());
+			stmt.setInt(3, vacinaEditada.getId());
 			stmt.setInt(4, vacinaEditada.getEstagio());
 			stmt.setDate(5, Date.valueOf(vacinaEditada.getDataInicioPesquisa()));
 			
@@ -105,7 +105,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 				vacina = new Vacina();
 				vacina.setId(Integer.parseInt(resultado.getString("ID")));
 				vacina.setNome(resultado.getString("NOME"));
-				vacina.setPaisOrigem(resultado.getString("PAIS_ORIGEM"));
+				vacina.setId(resultado.getInt("pais origem"));
 				vacina.setEstagio(resultado.getInt("ESTAGIO_PESQUISA"));
 				vacina.setDataInicioPesquisa(resultado.getDate("DATA_INICIO_PESQUISA").toLocalDate()); 
 				Pessoa pesquisador = pessoaRepository.consultarPorId(resultado.getInt("ID_PESQUISADOR"));
@@ -138,7 +138,7 @@ public class VacinaRepository implements BaseRepository<Vacina> {
 				Vacina vacina = new Vacina();
 				vacina.setId(Integer.parseInt(resultado.getString("ID")));
 				vacina.setNome(resultado.getString("NOME"));
-				vacina.setPaisOrigem(resultado.getString("PAIS_ORIGEM"));
+				vacina.setId(resultado.getInt("PAIS_ORIGEM"));
 				vacina.setEstagio(resultado.getInt("ESTAGIO_PESQUISA"));
 				vacina.setDataInicioPesquisa(resultado.getDate("DATA_INICIO_PESQUISA").toLocalDate()); 
 				Pessoa pesquisador = pessoaRepository.consultarPorId(resultado.getInt("ID_PESQUISADOR"));

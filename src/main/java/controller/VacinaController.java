@@ -12,7 +12,7 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import model.entity.Vacina;
-import service.vacinacao.VacinaService;
+import service.VacinaService;
 
 @Path("/vacina")
 public class VacinaController {

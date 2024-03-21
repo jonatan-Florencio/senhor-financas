@@ -23,6 +23,7 @@ public class PessoaRepository implements BaseRepository<Pessoa> {
 			stmt.setString(1, novaPessoa.getNome());
 			stmt.setString(2, novaPessoa.getCpf());
 			stmt.setString(3, novaPessoa.getSexo() + "");
+			stmt.setInt(3, novaPessoa.getId());
 			stmt.setDate(4, Date.valueOf(novaPessoa.getDataNascimento()));
 			stmt.setInt(5, novaPessoa.getTipo());
 			
@@ -71,6 +72,7 @@ public class PessoaRepository implements BaseRepository<Pessoa> {
 			stmt.setString(1, pessoaEditada.getNome());
 			stmt.setString(2, pessoaEditada.getCpf());
 			stmt.setString(3, pessoaEditada.getSexo() + "");
+			stmt.setInt(3, pessoaEditada.getId());
 			stmt.setDate(4, Date.valueOf(pessoaEditada.getDataNascimento()));
 			stmt.setInt(5, pessoaEditada.getTipo());
 			
@@ -105,6 +107,7 @@ public class PessoaRepository implements BaseRepository<Pessoa> {
 				pessoa.setSexo(resultado.getString("SEXO").charAt(0));
 				pessoa.setDataNascimento(resultado.getDate("DATA_NASCIMENTO").toLocalDate()); 
 				pessoa.setTipo(resultado.getInt("TIPO"));
+				pessoa.setId(resultado.getInt());
 			}
 		} catch (SQLException erro){
 			System.out.println("Erro ao consultar pessoa com o id: " + id);

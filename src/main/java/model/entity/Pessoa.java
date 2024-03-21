@@ -10,6 +10,7 @@ public class Pessoa {
 	private char sexo;
 	private LocalDate dataNascimento;
 	private int tipo;
+	private Pais pais;
 	
 	public Pessoa() {
 		
@@ -60,4 +61,13 @@ public class Pessoa {
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
+
+	public Pais getPais() {
+		return pais;
+	}
+
+	public void setPais(Pais pais) {
+		this.pais = pais;
+	}
+	
 }
