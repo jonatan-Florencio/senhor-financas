@@ -5,6 +5,7 @@ import java.util.List;
 import exception.VacinacaoException;
 import model.entity.Pessoa;
 import model.repository.PessoaRepository;
+import model.repository.VacinacaoRepository;
 
 public class PessoaService {
 
@@ -21,12 +22,11 @@ public class PessoaService {
 	public boolean atualizar(Pessoa pessoaEditada) throws VacinacaoException {
 		validarCamposObrigatorios(pessoaEditada);
 		
-		//TODO porque não valido o CPF? Veremos em sala
-		
 		return repository.alterar(pessoaEditada);
 	}
 
-	public boolean excluir(int id) {
+	public boolean excluir(int id) throws VacinacaoException {
+       validarPessoaVacinada();
 		return repository.excluir(id);
 	}
 
@@ -61,9 +61,20 @@ public class PessoaService {
 		if(p.getTipo() < 1 || p.getTipo() > 3) {
 			mensagemValidacao += " - informe o tipo (entre 1 e 3)";
 		}
+		if(p.getPaisOrigem() == null) {
+			mensagemValidacao += " - informe o país de origem";
+		}
 		
 		if(!mensagemValidacao.isEmpty()) {
 			throw new VacinacaoException("Preencha o(s) seguinte(s) campo(s) \n " + mensagemValidacao);
+		}
+	}
+	
+	private void validarPessoaVacinada() throws VacinacaoException {
+		
+		VacinacaoRepository vacinacaoRepository = new VacinacaoRepository();
+		if(vacinacaoRepository.consultarPorIdPessoa(0) != null ) {
+		throw new VacinacaoException("pessoa já vacinada não pode ser excluida.");
 		}
 	}
 }

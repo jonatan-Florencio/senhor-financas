@@ -1,11 +1,19 @@
 package model.entity;
 
 public class Pais {
-
-	private int id;
+	private int id; 
 	private String nome;
 	private String sigla;
 	
+	public Pais() {
+		super();
+	}
+	public Pais(int id, String nome, String sigla) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.sigla = sigla;
+	}
 	public int getId() {
 		return id;
 	}
@@ -24,6 +32,4 @@ public class Pais {
 	public void setSigla(String sigla) {
 		this.sigla = sigla;
 	}
-	
-	
 }

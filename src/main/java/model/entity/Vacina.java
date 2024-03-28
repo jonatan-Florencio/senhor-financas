@@ -9,6 +9,7 @@ public class Vacina {
 	private Pessoa pesquisadorResponsavel;
 	private LocalDate dataInicioPesquisa;
 	private int estagio;
+	private double media;
 	
 	public Vacina() {
 		
@@ -72,4 +73,14 @@ public class Vacina {
 	public void setEstagio(int estagio) {
 		this.estagio = estagio;
 	}
+
+	public double getMedia() {
+		return media;
+	}
+
+	public void setMedia(double media) {
+		this.media = media;
+	}
+	
+	
 }
