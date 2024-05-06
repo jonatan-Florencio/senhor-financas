@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "90a26b12-d8a6-4001-b567-686639987f07",
+		"_postman_id": "07f9382d-5677-45d8-85b8-b2a347f7c5e5",
 		"name": "Senac - Vacinas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "5303656"
@@ -21,14 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina"
 					]
@@ -51,14 +51,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina"
 					]
@@ -81,14 +81,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina/3",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina",
 						"3"
@@ -103,14 +103,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina/todas",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina/todas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina",
 						"todas"
@@ -125,14 +125,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina/responsavel/2",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina/responsavel/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina",
 						"responsavel",
@@ -148,14 +148,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacina/1",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacina/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacina",
 						"1"
@@ -179,14 +179,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/pessoa",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pessoa",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"pessoa"
 					]
@@ -209,14 +209,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/pessoa",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pessoa",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"pessoa"
 					]
@@ -239,14 +239,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/pessoa/3",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pessoa/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"pessoa",
 						"3"
@@ -261,14 +261,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/pessoa/todas",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pessoa/todas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"pessoa",
 						"todas"
@@ -283,17 +283,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/pessoa/1",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pessoa/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"pessoa",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -306,7 +306,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"idPessoa\" : 2,\r\n    \"vacina\": {\r\n    \"nome\": \"SenacVac\",\r\n        \"paisOrigem\": \"Brasil\",\r\n        \"estagio\": 1,\r\n        \"dataInicioPesquisa\": \"2022-10-10\",\r\n        \"pesquisadorResponsavel\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    \"dataAplicacao\": \"2024-03-20\",\r\n    \"avaliacao\": 5\r\n}",
+					"raw": "{\r\n    \r\n    \"vacina\": {\r\n        \"id\": 2 \r\n    },\r\n    \"dataAplicacao\": \"2024-03-20\",\r\n    \"avaliacao\": 0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -314,16 +314,91 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/senac-backend-20241-JonatanFlorencio/rest/vacinacao",
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacinacao",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"senac-backend-20241-JonatanFlorencio",
+						"senac-20241-backend-exemplos",
 						"rest",
 						"vacinacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Vacinacao] Listar todas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacinacao/todas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"senac-20241-backend-exemplos",
+						"rest",
+						"vacinacao",
+						"todas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Vacinacao] Listar por Pessoa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/vacinacao/pessoa/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"senac-20241-backend-exemplos",
+						"rest",
+						"vacinacao",
+						"pessoa",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Pais] Inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Tajiquistão\",\r\n    \"sigla\": \"TQ\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/senac-20241-backend-exemplos/rest/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"senac-20241-backend-exemplos",
+						"rest",
+						"pais"
 					]
 				}
 			},
