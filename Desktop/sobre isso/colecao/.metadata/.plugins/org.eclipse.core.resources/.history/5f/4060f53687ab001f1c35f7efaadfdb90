@@ -1,0 +1,79 @@
+package service;
+
+import exception.ColecaoException;
+import model.entity.Usuario;
+import model.repository.UsuarioRepository;
+
+public class UsuarioService {
+	
+private UsuarioRepository repository = new UsuarioRepository();
+	
+	public Usuario salvar(Usuario novoUsuario) throws ColecaoException {
+		validarCamposObrigatorios(novoUsuario);
+		
+		validarCpf(novoUsuario);
+		
+		return repository.salvar(novoUsuario);
+	}
+	
+	public boolean atualizar(Pessoa pessoaEditada) throws VacinacaoException {
+		validarCamposObrigatorios(pessoaEditada);
+		
+		//TODO porque não valido o CPF? Veremos em sala
+		
+		return repository.alterar(pessoaEditada);
+	}
+
+	public boolean excluir(int id) throws VacinacaoException   {
+		
+		VacinacaoRepository vacinacaoRepository = new VacinacaoRepository();
+		ArrayList<Vacinacao> aplicacoesNaPessoa = vacinacaoRepository.consultarPorIdPessoa(id);
+		
+		if(aplicacoesNaPessoa.size() > 0) {
+			throw new VacinacaoException("Pessoa não pode ser excluída, pois já foi vacinada");
+		}
+		
+		return repository.excluir(id);
+	}
+
+	public Pessoa consultarPorId(int id) {
+		return repository.consultarPorId(id);
+	}
+
+	public List<Pessoa> consultarTodas() {
+		return repository.consultarTodos();
+	}
+	
+	private void validarEmail(Usuario novoUsuario) throws ColecaoException {
+		if(repository.emailJaCadastrado(novoUsuario.getEmail())) {
+			throw new VacinacaoException("CPF " + novaPessoa.getCpf() + " já cadastrado "); 
+		}
+	}
+
+	private void validarCamposObrigatorios(Usuario u) throws ColecaoException{
+		String mensagemValidacao = "";
+		if(u.getNome() == null || u.getNome().isEmpty()) {
+			mensagemValidacao += " - informe o nome \n";
+		}
+		if(u.getDataNascimento() == null) {
+			mensagemValidacao += " - informe a data de nascimento \n";
+		}
+		if(u.getCpf() == null || u.getCpf().isEmpty() || u.getCpf().length() != 11) {
+			mensagemValidacao += " - informe o CPF";
+		}
+		if(u.getSexo() == ' ') {
+			mensagemValidacao += " - informe o sexo";
+		}
+		if(u.getTipo() < 1 || u.getTipo() > 3) {
+			mensagemValidacao += " - informe o tipo (entre 1 e 3)";
+		}
+		if(u.getPaisOrigem() == null) {
+			mensagemValidacao += " - informe o país de origem";
+		}
+		
+		if(!mensagemValidacao.isEmpty()) {
+			throw new VacinacaoException("Preencha o(s) seguinte(s) campo(s) \n " + mensagemValidacao);
+		}
+	}
+
+}

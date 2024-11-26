@@ -1,0 +1,48 @@
+package controller;
+
+public class usuarioController {
+
+	@Path("/usuario")
+	public class PessoaController {
+		
+		private UsuarioService service = new UsuarioService();
+		
+		@POST
+		@Consumes(MediaType.APPLICATION_JSON)
+		@Produces(MediaType.APPLICATION_JSON)
+		public Pessoa salvar(Pessoa novaPessoa) throws VacinacaoException{
+			 return service.salvar(novaPessoa);
+		}
+		
+		@PUT
+		@Consumes(MediaType.APPLICATION_JSON)
+		@Produces(MediaType.TEXT_PLAIN)
+		public boolean atualizar(Pessoa pessoaEditada) throws VacinacaoException{
+			 return service.atualizar(pessoaEditada);
+		}
+		
+		@DELETE
+		@Path("/{id}")
+		public boolean excluir(@PathParam("id") int id) throws VacinacaoException{
+			 return service.excluir(id);
+		}
+		
+		@GET
+		@Path("/{id}")
+		public Pessoa consultarPorId(@PathParam("id") int id){
+			 return service.consultarPorId(id);
+		}
+		
+		@GET
+		@Path("/todas")
+		public List<Pessoa> consultarTodas(){
+			 return service.consultarTodas();
+		}
+		
+		@GET
+		@Path("/pesquisadores")
+		public List<Pessoa> consultarPesquisadores(){
+			 return service.consultarPesquisadores();
+		}
+	}
+}

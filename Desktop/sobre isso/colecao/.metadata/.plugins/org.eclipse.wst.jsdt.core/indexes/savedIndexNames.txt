@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\jonatan.florencio\Desktop\sobre isso\colecao\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3806997028.index
+3319293868.index
+4041957988.index
+1894610407.index
