@@ -69,3 +69,5 @@
 2024-11-25 21:39:26,159 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jonatan.florencio\git\colecao-jjnj\src\test\resources
 2024-11-25 21:44:26,202 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-11-25 21:44:26,203 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jonatan.florencio\git\colecao-jjnj\src\main\resources
+2024-11-25 21:44:26,205 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-25 21:44:26,206 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jonatan.florencio\git\colecao-jjnj\src\test\resources
